@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "shuup-cms-blog"
+version = "1.0.4"
+description = "Shuup CMS Blog"
+authors = ["Shuup <devs@shuup.com>"]
+
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
