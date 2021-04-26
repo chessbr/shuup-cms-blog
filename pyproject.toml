@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "shuup-cms-blog"
-version = "1.0.6"
+version = "1.0.7"
 description = "Shuup CMS Blog"
 authors = ["Shuup <devs@shuup.com>"]
 
