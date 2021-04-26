@@ -40,6 +40,7 @@ def test_admin_form_part(admin_user):
             "base-available_to": "0%s/01/2019 00:00:00" % (i+1),
             "base-content__en": "Some content here %d" % i,
             "base-template_name": "shuup_cms_blog/blog_page.jinja",
+            "base-available_permission_groups": [],
             "blog-is_blog_article": True,
             "blog-image": factories.get_random_filer_image().pk,
             "blog-small_description__en": "small description %d" % i

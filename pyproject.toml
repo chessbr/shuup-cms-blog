@@ -8,3 +8,8 @@ authors = ["Shuup <devs@shuup.com>"]
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+
+[tool.black]
+exclude = "(migrations|node_modules)"
+line_length = 120
