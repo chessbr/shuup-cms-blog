@@ -20,14 +20,15 @@ class BlogArticle(TranslatableModel):
     is_blog_article = models.BooleanField(
         default=False,
         verbose_name=_("This is a blog article"),
-        help_text=_("Indicates whether this is a blog article and it should appear on articles list.")
+        help_text=_("Indicates whether this is a blog article and it should appear on articles list."),
     )
     image = FilerImageField(
         verbose_name=_("Image"),
-        blank=True, null=True,
+        blank=True,
+        null=True,
         on_delete=models.SET_NULL,
         help_text=_("The image for the article."),
-        related_name="blog_article"
+        related_name="blog_article",
     )
     translations = TranslatedFields(
         small_description=models.TextField(
@@ -36,7 +37,7 @@ class BlogArticle(TranslatableModel):
             help_text=_(
                 "Define a small description to be shown in article list. "
                 "This is the text that should capture users attention."
-            )
+            ),
         )
     )
 

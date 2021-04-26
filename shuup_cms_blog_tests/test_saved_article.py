@@ -10,15 +10,13 @@ from datetime import timedelta
 
 import pytest
 from django.utils.timezone import now
-
 from shuup.core.models import get_person_contact
 from shuup.simple_cms.models import Page
 from shuup.testing import factories
 from shuup.testing.utils import apply_request_middleware
+
 from shuup_cms_blog.models import BlogArticle
-from shuup_cms_blog.views import (
-    AddSavedArticlesView, RemoveSavedArticlesView, SavedArticlesView
-)
+from shuup_cms_blog.views import AddSavedArticlesView, RemoveSavedArticlesView, SavedArticlesView
 
 
 @pytest.mark.django_db
@@ -35,13 +33,13 @@ def test_saved_articles(rf):
             available_from=(now() - timedelta(days=10)),
             available_to=(now() + timedelta(days=10)),
             content="Content %d" % i,
-            template_name="shuup_cms_blog/blog_page.jinja"
+            template_name="shuup_cms_blog/blog_page.jinja",
         )
         BlogArticle.objects.create(
             page=article,
             is_blog_article=True,
             image=factories.get_random_filer_image(),
-            small_description="description %d" % i
+            small_description="description %d" % i,
         )
         articles.append(article)
 

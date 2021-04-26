@@ -7,7 +7,6 @@
 # LICENSE file in the root directory of this source tree.
 import pytest
 from django.urls import reverse
-
 from shuup.simple_cms.models import Page
 from shuup.testing import factories
 from shuup.testing.soup_utils import extract_form_fields
@@ -33,18 +32,20 @@ def test_admin_form_part(admin_user):
 
     # create 9 articles
     for i in range(9):
-        payload.update({
-            "base-title__en": "My Article %d" % i,
-            "base-url__en": "my-article-%d" % i,
-            "base-available_from": "0%s/01/2018 00:00:00" % (i+1),
-            "base-available_to": "0%s/01/2019 00:00:00" % (i+1),
-            "base-content__en": "Some content here %d" % i,
-            "base-template_name": "shuup_cms_blog/blog_page.jinja",
-            "base-available_permission_groups": [],
-            "blog-is_blog_article": True,
-            "blog-image": factories.get_random_filer_image().pk,
-            "blog-small_description__en": "small description %d" % i
-        })
+        payload.update(
+            {
+                "base-title__en": "My Article %d" % i,
+                "base-url__en": "my-article-%d" % i,
+                "base-available_from": "0%s/01/2018 00:00:00" % (i + 1),
+                "base-available_to": "0%s/01/2019 00:00:00" % (i + 1),
+                "base-content__en": "Some content here %d" % i,
+                "base-template_name": "shuup_cms_blog/blog_page.jinja",
+                "base-available_permission_groups": [],
+                "blog-is_blog_article": True,
+                "blog-image": factories.get_random_filer_image().pk,
+                "blog-small_description__en": "small description %d" % i,
+            }
+        )
         response = client.post(reverse("shuup_admin:simple_cms.page.new"), data=payload)
         assert response.status_code == 302
         assert Page.objects.count() == (i + 1)
@@ -54,11 +55,12 @@ def test_admin_form_part(admin_user):
         assert soup.find("div", {"class": "article-features"})
 
     # update blog image of the last page
-    payload.update({
-        "blog-image": factories.get_random_filer_image().pk,
-    })
+    payload.update(
+        {
+            "blog-image": factories.get_random_filer_image().pk,
+        }
+    )
     response = client.post(
-        reverse("shuup_admin:simple_cms.page.edit", kwargs=dict(pk=Page.objects.last().pk)),
-        data=payload
+        reverse("shuup_admin:simple_cms.page.edit", kwargs=dict(pk=Page.objects.last().pk)), data=payload
     )
     assert response.status_code == 302

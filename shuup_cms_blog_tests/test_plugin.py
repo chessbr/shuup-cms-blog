@@ -10,7 +10,6 @@ from datetime import timedelta
 import pytest
 from django.urls import reverse
 from django.utils.timezone import now
-
 from shuup.simple_cms.layout import PageLayout
 from shuup.simple_cms.models import Page
 from shuup.testing import factories
@@ -18,6 +17,7 @@ from shuup.themes.classic_gray.theme import ClassicGrayTheme
 from shuup.xtheme import get_current_theme, set_current_theme
 from shuup.xtheme.layout.utils import get_layout_data_key
 from shuup.xtheme.view_config import ViewConfig
+
 from shuup_cms_blog.models import BlogArticle
 from shuup_cms_blog.plugins import ShuupCMSBlogArticleListPlugin
 
@@ -35,7 +35,7 @@ def test_plugin():
         url="blog_one",
         available_from=(now() - timedelta(days=10)),
         available_to=(now() + timedelta(days=10)),
-        content=""
+        content="",
     )
 
     blog_two_page = Page.objects.create(
@@ -44,7 +44,7 @@ def test_plugin():
         url="blog_two",
         available_from=(now() - timedelta(days=10)),
         available_to=(now() + timedelta(days=10)),
-        content=""
+        content="",
     )
     # create 10 blog pages
     for page in [blog_one_page, blog_two_page]:
@@ -57,13 +57,13 @@ def test_plugin():
                 available_to=(now() + timedelta(days=10)),
                 content="Content %d" % i,
                 template_name="shuup_cms_blog/blog_page.jinja",
-                parent=page
+                parent=page,
             )
             BlogArticle.objects.create(
                 page=article,
                 is_blog_article=True,
                 image=factories.get_random_filer_image(),
-                small_description="description %d" % i
+                small_description="description %d" % i,
             )
 
     # create 3 non blog post pages
@@ -74,7 +74,7 @@ def test_plugin():
             url="non-%d" % i,
             available_from=(now() - timedelta(days=10)),
             available_to=(now() + timedelta(days=10)),
-            content="content %i" % i
+            content="content %i" % i,
         )
 
     theme = get_current_theme(shop)
@@ -137,7 +137,7 @@ def test_plugin():
         page=article_one,
         is_blog_article=True,
         image=factories.get_random_filer_image(),
-        small_description="description test"
+        small_description="description test",
     )
     article_two = Page.objects.create(
         shop=shop,
@@ -152,7 +152,7 @@ def test_plugin():
         page=article_two,
         is_blog_article=True,
         image=factories.get_random_filer_image(),
-        small_description="description test 2"
+        small_description="description test 2",
     )
     view_config = ViewConfig(theme=theme, shop=shop, view_name="PageView", draft=True)
 

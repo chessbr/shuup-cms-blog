@@ -6,7 +6,6 @@
 # LICENSE file in the root directory of this source tree.
 from django.templatetags.static import static
 from django.utils.translation import ugettext_lazy as _
-
 from shuup.simple_cms.models import Page
 from shuup.xtheme import TemplatedPlugin
 from shuup.xtheme.resources import add_resource
@@ -23,20 +22,16 @@ class ShuupCMSBlogArticleListPlugin(TemplatedPlugin):
 
     def get_defaults(self):
         defaults = super(ShuupCMSBlogArticleListPlugin, self).get_defaults()
-        defaults.update({
-            "blog_page": self.config.get("blog_page", None)
-        })
+        defaults.update({"blog_page": self.config.get("blog_page", None)})
         return defaults
 
     def get_context_data(self, context):
         page_obj = context.get("object")
         context = super(ShuupCMSBlogArticleListPlugin, self).get_context_data(context)
         request = context["request"]
-        qs = Page.objects.visible(request.shop).filter(
-            blog_article__is_blog_article=True
-        )
+        qs = Page.objects.visible(request.shop).filter(blog_article__is_blog_article=True)
         if page_obj:
-            if isinstance(page_obj, Page) and hasattr(page_obj, 'blog_article'):
+            if isinstance(page_obj, Page) and hasattr(page_obj, "blog_article"):
                 if page_obj.blog_article.is_blog_article:
                     self.config["blog_page"] = page_obj.parent.pk if page_obj.parent else None
                     qs = qs.exclude(id=page_obj.pk)  # Exclude active/visited blog article
@@ -60,11 +55,7 @@ class ShuupCMSBlogSaveArticleButtonPlugin(TemplatedPlugin):
     required_context_variables = ("request", "object")
 
     def is_context_valid(self, context):
-        return bool(
-            context.get("request") and
-            context["request"].customer and
-            isinstance(context["object"], Page)
-        )
+        return bool(context.get("request") and context["request"].customer and isinstance(context["object"], Page))
 
     def get_context_data(self, context):
         context = super(ShuupCMSBlogSaveArticleButtonPlugin, self).get_context_data(context)

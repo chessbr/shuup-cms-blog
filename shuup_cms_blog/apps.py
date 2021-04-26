@@ -12,24 +12,14 @@ class AppConfig(shuup.apps.AppConfig):
     name = "shuup_cms_blog"
     label = "shuup_cms_blog"
     verbose_name = "Shuup CMS Blog"
-    required_installed_apps = (
-        "shuup.simple_cms",
-    )
+    required_installed_apps = ("shuup.simple_cms",)
     provides = {
-        "simple_cms_template": [
-            "shuup_cms_blog.templates:BlogArticleTemplate"
-        ],
-        "admin_page_form_part": [
-            "shuup_cms_blog.admin_module.form_parts:BlogFormPart"
-        ],
+        "simple_cms_template": ["shuup_cms_blog.templates:BlogArticleTemplate"],
+        "admin_page_form_part": ["shuup_cms_blog.admin_module.form_parts:BlogFormPart"],
         "xtheme_plugin": [
             "shuup_cms_blog.plugins:ShuupCMSBlogArticleListPlugin",
-            "shuup_cms_blog.plugins:ShuupCMSBlogSaveArticleButtonPlugin"
+            "shuup_cms_blog.plugins:ShuupCMSBlogSaveArticleButtonPlugin",
         ],
-        "front_urls_pre": [
-            "shuup_cms_blog.urls:urlpatterns"
-        ],
-        "customer_dashboard_items": [
-            "shuup_cms_blog.dashboard_items:SavedArticlesDashboardItem"
-        ]
+        "front_urls_pre": ["shuup_cms_blog.urls:urlpatterns"],
+        "customer_dashboard_items": ["shuup_cms_blog.dashboard_items:SavedArticlesDashboardItem"],
     }

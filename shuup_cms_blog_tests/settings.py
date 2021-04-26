@@ -11,18 +11,14 @@ import tempfile
 from shuup_workbench.settings.utils import get_disabled_migrations
 from shuup_workbench.test_settings import *  # noqa
 
-INSTALLED_APPS = list(locals().get('INSTALLED_APPS', [])) + [
-    'shuup_cms_blog'
-]
+INSTALLED_APPS = list(locals().get("INSTALLED_APPS", [])) + ["shuup_cms_blog"]
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(tempfile.gettempdir(), 'shuup_cms_blog_tests.sqlite3')
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": os.path.join(tempfile.gettempdir(), "shuup_cms_blog_tests.sqlite3"),
     }
 }
 
 MIGRATION_MODULES = get_disabled_migrations()
-MIGRATION_MODULES.update({
-    'shuup_cms_blog': None
-})
+MIGRATION_MODULES.update({"shuup_cms_blog": None})

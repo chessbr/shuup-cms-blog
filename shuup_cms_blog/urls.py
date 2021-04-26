@@ -7,20 +7,18 @@
 # LICENSE file in the root directory of this source tree.
 from django.conf.urls import url
 
-from shuup_cms_blog.views import (
-    AddSavedArticlesView, RemoveSavedArticlesView, SavedArticlesView
-)
+from shuup_cms_blog.views import AddSavedArticlesView, RemoveSavedArticlesView, SavedArticlesView
 
 urlpatterns = [
     url(r"^dashboard/saved-articles/$", SavedArticlesView.as_view(), name="shuup-cms-blog.saved-articles"),
     url(
         r"^dashboard/saved-article/(?P<pk>.+?)/add/$",
         AddSavedArticlesView.as_view(),
-        name="shuup-cms-blog.add-saved-article"
+        name="shuup-cms-blog.add-saved-article",
     ),
     url(
         r"^dashboard/saved-article/(?P<pk>.+?)/remove/$",
         RemoveSavedArticlesView.as_view(),
-        name="shuup-cms-blog.remove-saved-article"
-    )
+        name="shuup-cms-blog.remove-saved-article",
+    ),
 ]
