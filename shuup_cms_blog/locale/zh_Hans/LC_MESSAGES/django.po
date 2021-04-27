@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-12 23:43+0000\n"
+"POT-Creation-Date: 2019-09-12 21:27+0000\n"
 "PO-Revision-Date: 2019-03-12 23:44+0000\n"
 "Last-Translator: Jiechao Li <jiechao.li@sesamechat.com>, 2019\n"
 "Language-Team: Chinese (Mandarin) (https://www.transifex.com/shuup/teams/55306/cmn/)\n"
@@ -20,6 +20,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: cmn\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Saved Articles"
+msgstr ""
+
+msgid "Blog page"
+msgstr ""
 
 msgid "page"
 msgstr "页面"
@@ -55,6 +61,9 @@ msgstr "博客文章"
 msgid "Blog Articles List"
 msgstr "博客文章列表"
 
+msgid "Blog Save Article Button"
+msgstr ""
+
 msgid "Blog Article Page"
 msgstr "博客文章页"
 
@@ -63,3 +72,27 @@ msgstr "博客文章"
 
 msgid "Home"
 msgstr "主页"
+
+msgid "Related articles"
+msgstr ""
+
+msgid "Remove from saved articles"
+msgstr ""
+
+msgid "Add to saved articles"
+msgstr ""
+
+msgid "Saved articles"
+msgstr ""
+
+msgid "Dashboard"
+msgstr ""
+
+msgid "No saved article found"
+msgstr ""
+
+msgid "Article removed with success."
+msgstr ""
+
+msgid "Article saved with success."
+msgstr ""

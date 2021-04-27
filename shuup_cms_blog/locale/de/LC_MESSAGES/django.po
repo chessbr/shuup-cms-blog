@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-12 23:43+0000\n"
+"POT-Creation-Date: 2019-09-12 21:27+0000\n"
 "PO-Revision-Date: 2019-03-12 23:44+0000\n"
 "Last-Translator: Melanie Missbach <melanie@buyhappy.de>, 2021\n"
 "Language-Team: German (https://www.transifex.com/shuup/teams/55306/de/)\n"
@@ -20,6 +20,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Saved Articles"
+msgstr "Gespeicherte Artikel"
+
+msgid "Blog page"
+msgstr "Blog-Seite"
 
 msgid "page"
 msgstr "Seite"
@@ -59,6 +65,9 @@ msgstr "Blog-Artikel"
 msgid "Blog Articles List"
 msgstr "Blog-Artikel-Liste"
 
+msgid "Blog Save Article Button"
+msgstr "\"Blog Artikel speichern\"-Button"
+
 msgid "Blog Article Page"
 msgstr "Blog-Artikel-Seite"
 
@@ -67,3 +76,27 @@ msgstr "Blog-Artikel"
 
 msgid "Home"
 msgstr "Startseite"
+
+msgid "Related articles"
+msgstr "Ähnliche Artikel"
+
+msgid "Remove from saved articles"
+msgstr "Aus \"gespeicherte Artikel\" entfernt"
+
+msgid "Add to saved articles"
+msgstr "Zu \"gespeicherte Artikel\" hinzugefügt"
+
+msgid "Saved articles"
+msgstr "Gespeicherte Artikel"
+
+msgid "Dashboard"
+msgstr "Kontoübersicht"
+
+msgid "No saved article found"
+msgstr "Kein gespeicherter Artikel gefunden"
+
+msgid "Article removed with success."
+msgstr "Der Artikel wurde erfolgreich entfernt."
+
+msgid "Article saved with success."
+msgstr "Der Artikel wurde erfolgreich gespeichert."

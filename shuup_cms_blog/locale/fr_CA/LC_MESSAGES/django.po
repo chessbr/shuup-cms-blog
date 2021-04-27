@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-12 23:43+0000\n"
+"POT-Creation-Date: 2019-09-12 21:27+0000\n"
 "PO-Revision-Date: 2019-03-12 23:44+0000\n"
 "Last-Translator: Panu Tulimäki <panu@shuup.com>, 2020\n"
 "Language-Team: French (Canada) (https://www.transifex.com/shuup/teams/55306/fr_CA/)\n"
@@ -20,6 +20,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr_CA\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Saved Articles"
+msgstr ""
+
+msgid "Blog page"
+msgstr ""
 
 msgid "page"
 msgstr "page"
@@ -31,14 +37,14 @@ msgid ""
 "Indicates whether this is a blog article and it should appear on articles "
 "list."
 msgstr ""
-"Indique s&#39;il s&#39;agit d&#39;un article de blog et qu&#39;il doit "
-"apparaître dans la liste des articles."
+"Indique s'il s'agit d'un article de blog et qu'il doit apparaître dans la "
+"liste des articles."
 
 msgid "Image"
 msgstr "Image"
 
 msgid "The image for the article."
-msgstr "L&#39;image de l&#39;article."
+msgstr "L'image de l'article."
 
 msgid "Small description"
 msgstr "Petite description"
@@ -47,8 +53,8 @@ msgid ""
 "Define a small description to be shown in article list. This is the text "
 "that should capture users attention."
 msgstr ""
-"Définissez une petite description à afficher dans la liste d&#39;articles. "
-"C&#39;est le texte qui devrait capter l&#39;attention des utilisateurs."
+"Définissez une petite description à afficher dans la liste d'articles. C'est"
+" le texte qui devrait capter l'attention des utilisateurs."
 
 msgid "blog article"
 msgstr "article de blog"
@@ -59,11 +65,38 @@ msgstr "articles de blog"
 msgid "Blog Articles List"
 msgstr "Liste des articles du blog"
 
+msgid "Blog Save Article Button"
+msgstr ""
+
 msgid "Blog Article Page"
-msgstr "Page d&#39;article de blog"
+msgstr "Page d'article de blog"
 
 msgid "Blog Article"
 msgstr "Article de blog"
 
 msgid "Home"
 msgstr "Accueil"
+
+msgid "Related articles"
+msgstr ""
+
+msgid "Remove from saved articles"
+msgstr ""
+
+msgid "Add to saved articles"
+msgstr ""
+
+msgid "Saved articles"
+msgstr ""
+
+msgid "Dashboard"
+msgstr ""
+
+msgid "No saved article found"
+msgstr ""
+
+msgid "Article removed with success."
+msgstr ""
+
+msgid "Article saved with success."
+msgstr ""

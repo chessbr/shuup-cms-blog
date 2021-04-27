@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Enter here all the changes made to the development version
 
+### Changed
+
+- Pull translations from Transifex
+
 ## [1.0.8] - 2021-04-27
 
 ## [1.0.7] - 2021-04-26

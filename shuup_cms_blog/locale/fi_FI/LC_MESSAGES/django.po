@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-12 23:43+0000\n"
+"POT-Creation-Date: 2019-09-12 21:27+0000\n"
 "PO-Revision-Date: 2019-03-12 23:44+0000\n"
 "Last-Translator: Panu Tulimäki <panu@shuup.com>, 2020\n"
 "Language-Team: Finnish (Finland) (https://www.transifex.com/shuup/teams/55306/fi_FI/)\n"
@@ -20,6 +20,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fi_FI\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Saved Articles"
+msgstr ""
+
+msgid "Blog page"
+msgstr ""
 
 msgid "page"
 msgstr "sivu"
@@ -59,6 +65,9 @@ msgstr "blogiartikkelit"
 msgid "Blog Articles List"
 msgstr "Blogiartikkelista"
 
+msgid "Blog Save Article Button"
+msgstr ""
+
 msgid "Blog Article Page"
 msgstr "Blogiartikkelisivu"
 
@@ -67,3 +76,27 @@ msgstr "Blogiartikkeli"
 
 msgid "Home"
 msgstr "Koti"
+
+msgid "Related articles"
+msgstr ""
+
+msgid "Remove from saved articles"
+msgstr ""
+
+msgid "Add to saved articles"
+msgstr ""
+
+msgid "Saved articles"
+msgstr ""
+
+msgid "Dashboard"
+msgstr ""
+
+msgid "No saved article found"
+msgstr ""
+
+msgid "Article removed with success."
+msgstr ""
+
+msgid "Article saved with success."
+msgstr ""
