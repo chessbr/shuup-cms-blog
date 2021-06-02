@@ -74,7 +74,7 @@ typed-ast==1.4.3          # via black
 typing-extensions==3.7.4.3  # via black, importlib-metadata
 unicodecsv==0.14.1        # via shuup
 unidecode==1.1.2          # via django-filer
-urllib3==1.26.4           # via requests
+urllib3==1.26.5           # via requests
 wcwidth==0.2.5            # via pytest
 webencodings==0.5.1       # via bleach
 xlrd==2.0.1               # via shuup
