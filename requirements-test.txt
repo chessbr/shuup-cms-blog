@@ -68,7 +68,7 @@ setuptools-gitver==1.1.0  # via shuup-cms-blog
 shuup==2.6.5
 six==1.15.0               # via bleach, django-filer, django-parler, jsonfield, python-dateutil, shuup
 soupsieve==2.2.1          # via beautifulsoup4
-sqlparse==0.4.1           # via django
+sqlparse==0.4.2           # via django
 toml==0.10.2              # via black, shuup
 typed-ast==1.4.3          # via black
 typing-extensions==3.7.4.3  # via black, importlib-metadata
