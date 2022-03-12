@@ -51,7 +51,7 @@ mypy-extensions==0.4.3    # via black
 openpyxl==2.5.14          # via shuup
 packaging==20.9           # via bleach, pytest
 pathspec==0.8.1           # via black
-pillow==8.2.0             # via easy-thumbnails
+pillow==9.0.1             # via easy-thumbnails
 pluggy==0.13.1            # via pytest
 py==1.10.0                # via pytest
 pycodestyle==2.6.0        # via flake8
